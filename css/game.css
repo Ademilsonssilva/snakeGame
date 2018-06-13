@@ -1,0 +1,45 @@
+.gametable > tr> td{
+	padding: 10px;
+}
+
+.hasSnake{
+	background: lightgreen;
+	border: 1px solid green;
+}
+
+.snakeHead{
+	background: green !important;
+}
+
+.hasFruit {
+	background: red;
+}
+
+.hadFruit{
+	background: orange;
+}
+
+#body {
+	float: left;
+}
+
+#gameConfig { 
+	float: left;
+	width: 30%;
+}
+
+#leaderboard { 
+	float: left;
+	width: 30%;
+}
+
+#gameScore{
+	float: left;
+	width: 30%;
+	/* border: 1px solid black; */
+}
+
+#gameConfig  > table, tr, td{
+	padding: 4px;
+	margin: 4px;
+}

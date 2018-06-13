@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title> snake! </title>
+		<!-- CSS -->
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link href="css/game.css" rel="stylesheet"/>
+		<!-- ENDCSS -->
+	</head>
+	<body>
+	
+		<!-- GAME CONTENT -->
+			<div id="gameConfig" >
+				<table>
+					<tr>
+						<td> Dificuldade: </td>
+						<td> 
+							<select id="difficulty">
+								<option value="easy">	Facil	</option>
+								<option value="medium" selected>	Médio	</option>
+								<option value="hard">	Difícil	</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td> Tamanho do tabuleiro: </td>
+						<td> 
+							<select id="tableSize">
+								<option value="small">	Pequeno	</option>
+								<option value="medium" selected>	Médio	</option>
+								<option value="big">	Grande	</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<button id="begin">Começar</button>
+						</td>
+					</tr>
+				</table>
+						
+			</div>
+			
+			
+			<div id="body" tabindex="1" >
+			
+			</div>
+			
+			<div id="gameScore" tabindex="1" hidden>
+				<table> 
+					<tr>
+						<td> Dificuldade: </td>
+						<td> <span id="span_difficulty"></span> </td>
+					</tr>
+					<tr>
+						<td> Tabuleiro: </td>
+						<td> <span id="span_size"></span> </td>
+					</tr>
+					<tr>
+						<td> Pontuação: </td>
+						<td> <span id="score"></span></td>
+					</tr>
+					<tr>
+						<td> Quantidade: </td>
+						<td> <span id="fruits"></span></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"> 
+							<button id="newGame" hidden>Novo Jogo</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="leaderboard" hidden>
+				<table>
+					<tr>
+						<td colspan="2">
+							<h2><font color="red">Recorde: </font></h2>
+						</td>
+					</tr>
+					<tr>
+						<td> Pontuação: </td>
+						<td> <span id="leader_score"></span></td>
+					</tr>
+					<tr>
+						<td> Quantidade: </td>
+						<td> <span id="leader_fruits"></span></td>
+					</tr>
+					<tr>
+						<td> Dificuldade: </td>
+						<td> <span id="leader_difficulty"></span> </td>
+					</tr>
+					<tr>
+						<td> Tabuleiro: </td>
+						<td> <span id="leader_size"></span> </td>
+					</tr>
+					
+				</table>
+			</div>
+			
+		<!-- ENDGAMECONTENT -->
+	
+		<!-- JAVASCRIPT -->
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<script src="scripts/snake.js"></script>
+		<!-- ENDJAVASCRIPT -->
+	</body>
+</html>
